@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e7d9ff">
+<title>Birthday.exe — The Million-Piece Mission</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+  <header class="topbar"><a class="brand" href="#top">birthday<span>wish</span></a><div class="topright"><span class="label">A LITTLE SIDE QUEST</span><button class="sound" id="sound" aria-pressed="false">♪ SOUND OFF</button></div></header>
+  <main id="top">
+    <section class="hero"><h1><span id="heroLead">A heart, shattered.</span><br><em id="heroWish">One birthday wish.</em></h1><p id="heroDescription">A heart has shattered into <strong>millions of tiny, glowing pieces</strong>. Kat’s ten little ninjas have one mission: find every piece and put it back together, just for you.</p></section>
+    <section class="stage" id="stage" aria-label="An animated field of countless tiny broken pieces. Ten tiny ninjas collect them to form Happy Birthday.">
+      <canvas id="world"></canvas>
+      <div class="stage-top"><span class="pill">✦ MISSION: RESTORE THE PIECES</span><span class="fragment-stat">1,000,000+ BROKEN PIECES</span></div>
+      <div class="stage-bottom"><span class="status" id="status" aria-live="polite">Millions of tiny broken pieces are scattered everywhere...</span><span class="step" id="step">BEFORE THE MISSION</span></div>
+    </section>
+    <div class="controls"><div class="buttonrow"><button class="btn" id="start">▶ BEGIN THE NINJA MISSION</button><button class="btn secondary" id="replay" hidden>↺ REPLAY THE MAGIC</button></div><p class="note" id="hint">Psst… the tiny pieces have a secret.</p><div class="complete" id="complete"><h2>Mission accomplished <span style="color:#d858a4">✦</span></h2><p>Even a million scattered little things can become something beautiful.</p></div></div>
+    <section class="celebration" id="celebration" aria-label="A birthday cake with five candles that light up before making a wish">
+      <div class="cake-area">
+        <h2>One last thing...</h2>
+        <p class="caption">A little birthday magic, just for you.</p>
+        <div class="cake-illustration" role="img" aria-label="A two-tier pink and cream birthday cake with five striped candles"><div class="plate"></div><div class="cake-base"></div><div class="frosting"></div><div class="cake-upper"></div><div class="tier-top"></div><div class="cake-decoration"></div><div class="candles" id="candles"><div class="candle"><span class="wick"></span><span class="flame"></span><span class="smoke"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span><span class="smoke"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span><span class="smoke"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span><span class="smoke"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span><span class="smoke"></span></div></div></div>
+        <p class="wish-intro" id="wishIntro" aria-live="polite">The ninjas brought the cake. They’re lighting the candles...</p>
+        <button class="btn wish-action" id="makeWish">✧ MAKE A WISH</button>
+        <p class="wish-result" id="wishResult" aria-live="polite">Your wish is on its way to the stars ✦</p>
+        <div class="letter-toggle"><button class="btn secondary" id="letterBtn">✉ OPEN YOUR SECRET LETTER</button></div>
+      </div>
+      <div class="letter" id="letter"><h3 id="letterTitle">To the main character of today ♡</h3><p id="letterText"> </p><div class="sign" id="letterSign">WITH LOVE, FROM YOUR KAT'S TINY NINJA SQUAD ✦</div></div>
+    </section>
+  </main>
+  <footer class="footer">MADE WITH MAGIC & VERY SMALL NINJA ENERGY ✦</footer>
+</div>
+<script src="settings.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
